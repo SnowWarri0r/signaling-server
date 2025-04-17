@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>视频通话</title>
+    <link rel="stylesheet" href="webrtc.css">
+</head>
+
+<body>
+    <h1>视频语音聊天</h1>
+    <div>
+        <input id="roomId" placeholder="输入房间号" />
+        <button id="joinBtn">加入房间</button>
+        <p id="status"></p>
+    </div>
+
+    <div id="video-wrapper">
+        <video id="localVideo" autoplay muted playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <button id="videoToggleBtn" class="tool-btn">关闭摄像头</button>
+        <button id="audioToggleBtn" class="tool-btn">关闭麦克风</button>
+    </div>
+
+    <div id="chat-box"></div>
+    <div id="controls">
+        <input id="chat-input" type="text" placeholder="输入聊天内容" />
+        <button id="send-btn">发送</button>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script type="module" src="webrtc.js"></script>
+</body>
+
+</html>

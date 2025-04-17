@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聊天室</title>
+    <link rel="stylesheet" href="chatroom.css" />
+</head>
+
+<body>
+    <h2>聊天室</h2>
+    <div style="margin-bottom: 10px;">
+        <input id="roomInput" placeholder="房间号" />
+        <input id="nicknameInput" placeholder="昵称" />
+        <button id="joinBtn">加入房间</button>
+    </div>
+    <div id="user-list">👥 当前在线人数：0</div>
+    <div id="chat-box" ondragover="event.preventDefault()"></div>
+    <div id="controls">
+        <input id="messageInput" type="text" placeholder="输入聊天内容" />
+        <button id="sendBtn">发送</button>
+    </div>
+
+    <div id="preview-modal" onclick="this.style.display='none'">
+        <img id="preview-img" src="" />
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script type="module" src="chatroom.js"></script>
+</body>
+
+</html>
