@@ -17,10 +17,10 @@ public/config.json
 ---
 
 ### 2. Install Dependencies and Start Dev Server | 安装依赖并启动开发服务器
-
+```bash
 yarn          # install dependencies | 安装依赖  
 yarn dev      # start development server | 启动开发服务器
-
+```
 ---
 
 ### 3. Visit in Browser | 在浏览器中访问
